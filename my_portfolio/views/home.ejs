@@ -1,0 +1,118 @@
+<%- include('partials/header', { title: 'Home - Aakrist Goyal Portfolio' }) %>
+
+<!-- Hero Section -->
+<div class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center text-md-start">
+      <h1>Hello, I'm <span class="text-primary">Aakrist Goyal</span></h1>
+      <p class="lead">Full-Stack Developer | Java Programmer | Data Structures & Algorithms</p>
+      <p>
+        Computer Science student skilled in building scalable web applications, designing efficient solutions in Java, and applying data structures and algorithms to solve complex problems effectively.
+      </p>
+      <a href="https://github.com/Aakristgoyal" target="_blank" class="btn btn-dark mt-3 me-2">GitHub</a>
+      <a href="/projects" class="btn btn-primary mt-3">View Projects</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="/images/dev5.png" alt="Developer" class="img-fluid rounded shadow" style="max-height: 350px;">
+    </div>
+  </div>
+</div>
+
+
+<!-- Skills Section -->
+<div class="container-fluid bg-dark py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 text-white">Technical Skills</h2>
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <% const skills = [
+        {icon:'bi-code-slash', text:'Java', color:'text-warning'},
+        {icon:'bi-filetype-py', text:'Python', color:'text-info'},
+        {icon:'bi-filetype-js', text:'JavaScript', color:'text-warning'},
+        {icon:'bi-node-plus-fill', text:'Node.js', color:'text-success'},
+        {icon:'bi-database', text:'SQL', color:'text-info'},
+        {icon:'bi-filetype-html', text:'HTML/CSS', color:'text-danger'},
+        {icon:'bi-filetype-jsx', text:'React', color:'text-primary'},
+        {icon:'bi-cloud-fill', text:'Cloud & APIs', color:'text-info'}
+      ]; %>
+      <% skills.forEach(skill => { %>
+      <div class="col">
+        <div class="card text-center skill-card h-100 bg-secondary text-white">
+          <div class="card-body">
+            <i class="bi <%= skill.icon %> fs-1 <%= skill.color %>"></i>
+            <h6 class="card-title mt-2"><%= skill.text %></h6>
+          </div>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+</div>
+
+<!-- Highlighted Projects -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Highlighted Projects</h2>
+  <div class="row">
+    <!-- MoodVerse Project -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 project-card">
+        <div class="card-body">
+          <h5 class="card-title">MoodVerse</h5>
+          <p class="card-text">
+            A mood-based book recommendation app integrating Node.js, Express, MongoDB, and Hugging Face ML for semantic search and PDF uploads.
+          </p>
+          <a href="https://moodverse.onrender.com/" target="_blank" class="btn btn-success me-2">View Live</a>
+          <a href="https://github.com/Aakristgoyal/MoodVerse" target="_blank" class="btn btn-dark">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- StayHaven Project -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 project-card">
+        <div class="card-body">
+          <h5 class="card-title">StayHaven</h5>
+          <p class="card-text">
+            A vacation rental platform built with Node.js, Express, and MongoDB enabling property listings, bookings, and user authentication.
+          </p>
+          <a href="https://github.com/Aakristgoyal/StayHaven_HotelBooking_Accomodation_Platform" target="_blank" class="btn btn-dark">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Certifications -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Certifications</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 text-center cert-card">
+        <div class="card-body">
+          <i class="bi bi-award-fill fs-1 text-success"></i>
+          <h6 class="card-title mt-2">Python for Data Science, AI and Development</h6>
+          <p class="card-text small">IBM</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center cert-card">
+        <div class="card-body">
+          <i class="bi bi-award-fill fs-1 text-primary"></i>
+          <h6 class="card-title mt-2">Java Programming Fundamentals</h6>
+          <p class="card-text small">Infosys Springboard</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center cert-card">
+        <div class="card-body">
+          <i class="bi bi-award-fill fs-1 text-warning"></i>
+          <h6 class="card-title mt-2">Data Analytics Virtual Experience Program</h6>
+          <p class="card-text small">Deloitte</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
