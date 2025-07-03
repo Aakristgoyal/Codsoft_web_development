@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -25,6 +25,6 @@ app.get('/contact', (req, res) => {
 app.get('/services',(req,res)=>{
     res.render('services');
 })
-app.listen(port, () => {
-  console.log(`Server listening on http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server listening on http://localhost:${PORT}`);
 });
