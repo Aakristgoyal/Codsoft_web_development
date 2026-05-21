@@ -1,6 +1,6 @@
 # 🚀 Personal Portfolio
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://codsoft-web-development.onrender.com/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://aakristgoyal.onrender.com/)
 
 Welcome to my personal developer portfolio showcasing my projects, skills, and services in web development, AI, and ML integration.
 
@@ -8,6 +8,6 @@ Welcome to my personal developer portfolio showcasing my projects, skills, and s
 
 ## 🌐 **Live Demo**
 
-🔗 **[View Portfolio](https://codsoft-web-development.onrender.com/)**
+🔗 **[View Portfolio](https://aakristgoyal.onrender.com/)**
 
 ---
